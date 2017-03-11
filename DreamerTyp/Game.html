@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Game</title>
+        <style type="text/css">
+            body{ margin: 40px; background: #666; }
+            #my_canvas{ background: #FFF; border: #000 1px solid; }
+        </style>
+        <script>
+            function draw(){
+                var ctx = document.getElementById("my_canvas").getContext("2d");
+                ctx.fillStyle = "magenta";
+                ctx.fillRect(20, 20, 100, 100);
+                ctx.fillRect(200, 200, 50, 50);
+                ctx.strokeRect(20,20,100,100);
+                ctx.clearRect(20, 20, 50, 50);
+                
+            }
+            
+            window.onload = draw;
+        </script>
+    </head>
+    <body>
+        
+        <canvas id="my_canvas" width="400" height="300">
+            
+        </canvas> 
+    
+    </body>
+</html>
